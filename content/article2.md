@@ -4,7 +4,7 @@ Category: Python
 Tags: pelican, publishing
 Slug: my-super-post2
 Author: Conor O'Sullivan
-Summary: I"VE CHANGED IT 
+Summary: This is the second post on my blog 
 
 The second post
 ###############
