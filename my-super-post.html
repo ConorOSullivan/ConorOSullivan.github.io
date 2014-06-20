@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-        <title>The first post</title>
+        <title>Mapping instead of looping in python</title>
         <meta charset="utf-8" />
 
 
@@ -52,21 +52,29 @@
             <header>
               <h2 class="entry-title">
                 <a href="/my-super-post.html" rel="bookmark"
-                   title="Permalink to The first post">The first post</a></h2>
+                   title="Permalink to Mapping instead of looping in python">Mapping instead of looping in python</a></h2>
            
             </header>
             <footer class="post-info">
-              <abbr class="published" title="2013-06-06T10:20:00">
-                Thu 06 June 2013
+              <abbr class="published" title="2014-06-20T10:20:00">
+                Fri 20 June 2014
               </abbr>
               <address class="vcard author">
                 By <a class="url fn" href="/author/conor-osullivan.html">Conor O'Sullivan</a>
               </address>
             </footer><!-- /.post-info -->
             <div class="entry-content">
-              <p>My first post</p>
+              <p>Python speed increases</p>
 <h6></h6>
-<p>This actually works!</p>
+<p>Found this great set of tips online and I thought I'd share.</p>
+<p>Instead of doing a loop where you call a function each time like this:</p>
+<p><code>a = []
+for elt in list:
+    a.append(int(elt))</code></p>
+<p>Use a map() instead to speed up python computations. map() allows the computer 
+to find the function once and then apply it to all elements of the list instead
+of finding it over and over.</p>
+<p><code>a = map(int, list)</code></p>
             </div><!-- /.entry-content -->
 
 
@@ -87,8 +95,8 @@
 
 <h4>Tags</h4>
 	<ul>
-	    <li class="tag-1"><a href="/tag/pelican.html">pelican</a></li>
 	    <li class="tag-1"><a href="/tag/publishing.html">publishing</a></li>
+	    <li class="tag-1"><a href="/tag/pelican.html">pelican</a></li>
 </ul>
 
 
